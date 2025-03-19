@@ -1,0 +1,290 @@
+/* Para toda la página*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* EStilo para el body*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+  padding: 50px;
+  background-color: #333;
+}
+
+/* Flexbox para alinear los elementos del menú horizontalmente */
+.menu ul {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  justify-content: center;
+}
+
+.menu li a {
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #444;
+}
+
+/* SECCIÓN INICIO */
+#inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Los elementos se mueven a la siguiente línea si no caben*/
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#foto-personal {
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  height: 150px;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover;
+  border: 4px solid #007bff; /* Borde azul */
+  margin-bottom: 20px;
+}
+
+.presentacion {
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: #444;
+}
+
+/* SECCIÓN SOBRE MÍ */
+.sobre-mi {
+  background-color: #f2f2f2; /* Fondo gris claro */
+  padding: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sobremi2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sobremi2 div {
+  width: 22%;
+  min-width: 200px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-family: 'Verdana', sans-serif;
+  font-size: 20px;
+  color: #007bff; /* Color azul para destacar los títulos */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p, ul {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #444;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* SECCIÓN PROYECTOS */
+.proyectos {
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.lista-proyectos {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+  width: 100%; /* La imagen ocupa todo el ancho*/
+  max-width: 450px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.proyecto p {
+  font-family: 'Georgia', serif; /* Cambia la fuente */
+  font-size: 18px;
+  color: #444;
+  margin-top: 10px;
+}
+
+.proyecto p strong {
+  font-family: 'Verdana', sans-serif; /* Fuentes para los títulos */
+  font-size: 20px;
+  color: #007bff; /* Color azul para destacar */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .lista-proyectos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .proyecto {
+      width: 90%;
+  }
+}
+
+/* SECCIÓN IDIOMAS */
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Tahoma', sans-serif;
+  color: #222;
+}
+
+table {
+  width: 50%; /* Reducir el tamaño */
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 10px; /* Espacio superior */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgoldenrodyellow;
+}
+
+/* SECCIÓN EXPERIENCIA */
+.experiencia {
+  padding: 32px;
+}
+
+/* Uso de Flexbox */
+.lista-experiencia {
+  display: flex;
+  flex-direction: column; /* Elementos en columna */
+  gap: 16px;
+}
+
+.lista2-experiencia {
+  background-color: #f5f5f5;
+  padding: 16px;
+}
+
+/* SECCIÓN CONTACTO */
+.contacto {
+  padding: 32px;
+  background-color: #fff;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto; /* Centra el formulario */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacto label {
+  font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.contacto button {
+  padding: 12px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #444;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222; /* Color oscuro */
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  color: white; /* Letra en blanco */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}

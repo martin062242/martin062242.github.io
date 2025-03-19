@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio personal</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li>
+          <a href="#sobre-mi">Sobre Mí</a>
+        </li>
+        <li>
+          <a href="#proyectos">Proyectos Destacados</a>
+        </li>
+        <li>
+          <a href="#idiomas">Idiomas</a>
+        </li>
+        <li>
+          <a href="#experiencia">Experiencia</a>
+        </li>
+        <li>
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="inicio">
+    <img src="../IMG/perfil.png" alt="Foto personal" id="foto-personal">
+    <div class="presentacion">
+      <h1>¡Hola! Soy Martín Fraga Louzán</h1>
+      <p>Soy estudiante del grado superior de DAM en el Liceo La Paz, A Coruña.</p>
+    </div>
+  </section>
+  <section class="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <article class="sobremi2">
+      <div>
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Java</li>
+          <li>HTML y CSS</li>
+          <li>Pseint</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Formación</h3>
+        <ul>
+          <li>ESO</li>
+          <li>Bachiller</li>
+          <li>Grado Superior DAM (en proceso)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Intereses</h3>
+        <p>Ciberseguridad, desarrollo de aplicaciones, videojuegos</p>
+      </div>
+      <div>
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación</li>
+          <li>Resolución de problemas</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+  <section class="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="lista-proyectos">
+      <div class="proyecto">
+        <img src="../IMG/1.png" alt="Proyecto 1" class="img1">
+        <p><strong>Proyecto 1</strong></p>
+        <p>Creación de mi propia página de viajes basándome en los estudios básicos para ello de HTML y CSS.</p>
+      </div>
+      <div class="proyecto">
+        <img src="../IMG/2.png" alt="Proyecto 2" class="img2">
+        <p><strong>Proyecto 2</strong></p>
+        <p>Inicialización en el estudio de HTML (página sobre películas básica).</p>
+      </div>
+    </div>
+  </section>
+  <section class="idiomas">
+    <h2>Idiomas</h2>
+    <table>
+      <tr>
+        <th>Idioma</th>
+        <th>Nivel</th>
+      </tr>
+      <tr>
+        <td>Español</td>
+        <td>Nativo</td>
+      </tr>
+      <tr>
+        <td>Inglés</td>
+        <td>B1</td>
+      </tr>
+      <tr>
+        <td>Gallego</td>
+        <td>Nativo</td>
+      </tr>
+      <tr>
+        <td>Francés</td>
+        <td>B1</td>
+      </tr>
+    </table>
+  </section>
+  <section class="experiencia">
+    <h2>Experiencia</h2>
+    <div class="lista-experiencia">
+      <article class="lista2-experiencia">
+        <h3>HTML y CSS</h3>
+        <p>Tengo unos conocimientos básicos de uso de HTML y CSS para diseño de páginas web. En un futuro, al acabar el ciclo, podré ser capaz de tener todos los conceptos necesarios para el desarrollo de páginas web.</p>
+      </article>
+      <article class="lista2-experiencia">
+        <h3>Java</h3>
+        <p>Estudios en desarrollo de multiplataformas utilizando Java como lenguaje e IntelliJ como aplicación de desarrollo.</p>
+      </article>
+    </div>
+  </section>
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre</label> <input type="text" id="nombre" name="nombre" required=""> <label for="email">Email</label> <input type="email" id="email" name="email" required=""> <label for="mensaje">Mensaje</label> 
+      <textarea id="mensaje" name="mensaje" rows="5" required=""></textarea> <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 Martín. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
